@@ -1,0 +1,82 @@
+@import './abstracts/mixins.scss';
+.itemsContainer{
+    height: auto;
+    width: 100%;
+
+    .reverse{
+        @include colum-reverse;
+    }
+}
+
+.container{      
+    width: 100%;
+    height: 25%;
+    display: flex;
+    .rainImg{
+        @include flex-row-center;
+        @include itemsImgBackground;
+        @include backGroundImgItems;
+        width: 50%;
+        background-image: url('https://i.ibb.co/kGqTZsw/pexels-engin-akyurt-1451040.jpg');
+        button{
+            @include button1;
+        }
+        button:hover{
+            transform: scale(1.5);
+        }
+    }
+    .rainImg:hover{
+        filter: opacity(.5);
+    }
+    .puffImg{
+        @include itemsImgBackground;
+        @include backGroundImgItems;
+        background-image: url('https://i.ibb.co/rQX1FC4/maxresdefault-1.jpg');
+    }
+    .puffImg:hover{
+         filter: opacity(.5);
+    }
+    
+    .cartImg{
+        @include itemsImgBackground;
+        @include backGroundImgItems;
+        background-image: url('https://i.ibb.co/rdbv8Mr/2p-Kb-H6-0f-Dms8os00.jpg');
+    }
+    .cartImg:hover{
+        filter: opacity(.5);
+    }
+
+    .napImg{
+        @include itemsImgBackground;
+        @include backGroundImgItems;
+        background-image: url('https://i.ibb.co/dJQN8HC/horizontal-image-handsome-cute-young-man-with-bristle-posing-with-head-white-soft-pillow-sleeping-pe.jpg');
+    }
+    .napImg:hover{
+        filter: opacity(.5);
+    }
+}
+
+.textSection{
+    width: 50%;
+    @include flex-row-center;
+    flex-direction: column;
+    gap: 2rem;
+
+    button:hover{
+        transform: scale(1.5);
+    }
+}
+
+@media screen and (max-width: 900px) {
+   .container{
+    display: flex;
+    flex-direction: column;
+   }
+   .textSection{
+    height: 80vh;
+    width: 100%;
+    padding: 2rem;
+   }
+
+
+  }

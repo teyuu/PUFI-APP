@@ -1,0 +1,83 @@
+@import './abstracts/mixins.scss';
+
+.containerNav{
+    @include smallScreen;
+    @include mediumScreen;
+    @include nav-flex;
+
+
+    h2{
+        font-size: 4rem;
+        font-weight:900
+    }
+    li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-right: 1px solid white;
+        padding: 0 12px;
+        gap: 2px;
+        img{
+            width: 55px;
+        }
+    
+        @media screen and (max-width: 640px) {
+            border: none;
+         }
+
+    }
+    .list{
+        @include smallScreen;
+        @include flex-row-center;
+        font-size: 1.5rem;
+        font-weight: 500;
+
+        li::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #FFFF;
+            transition: width .3s;
+        }
+
+        li:hover::after {
+            width: 100%;
+        }
+    }
+
+    .pufinap{
+        border-right: none;
+    }
+
+    .cuenta-compra{
+        display: flex;
+        
+        button{
+            padding: 0 10px;
+            font-size: 1.3rem;
+            color: white ;
+        }
+        button::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #FFFF;
+            transition: width .3s;
+        }
+
+        button:hover::after {
+            width: 100%;
+        }
+
+        
+        
+        .border{
+            border-right: 1px solid white;
+        }
+    }
+}
+
+
+

@@ -1,0 +1,16 @@
+/*abstracts*/
+@use './scss/abstracts/variables';
+@use './scss/abstracts/mixins';
+
+/*base*/
+@use './scss/base/base';
+@use './scss/base/resets';
+
+/*components*/
+@use './scss/navBar';
+@use './scss/main';
+@use './scss/itemsSection';
+@use './scss/gridsection';
+@use './scss/newslettersection';
+@use './scss/footer';
+@use './scss/minifooter';

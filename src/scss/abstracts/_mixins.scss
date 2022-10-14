@@ -1,0 +1,68 @@
+@mixin flex-row-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin nav-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1.2rem;
+}
+
+@mixin backgroundMain {
+  background-image: url("https://i.ibb.co/54mns5x/haley-phelps-S-llx-Yh3-Gz-I-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*media queries*/
+@mixin smallScreen {
+  @media screen and (max-width: 640px) {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    width: auto;
+    height: auto;
+  }
+}
+
+@mixin mediumScreen {
+  @media screen and (min-width: 640px) and (max-width: 1280px) {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    width: auto;
+    height: auto;
+  }
+}
+
+@mixin itemsImgBackground {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 70vh;
+}
+
+@mixin button1 {
+  color: white;
+  font-size: 2rem;
+  padding: 0.5rem 2rem;
+  border: solid 3.5px white;
+}
+
+@mixin backGroundImgItems {
+  @media screen and (max-width: 900px) {
+    width: 100%;
+  }
+}
+
+@mixin colum-reverse{
+  @media screen and (max-width: 900px) {
+    flex-direction: column-reverse;
+  }
+}

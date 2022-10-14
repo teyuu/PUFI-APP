@@ -1,0 +1,17 @@
+.miniFooterContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    align-items: center;
+
+    img{
+        width: 5%;
+    }
+    p{
+        font-size: 10px;
+        color: grey;
+    }
+    span{
+        color: gray;
+    }
+}

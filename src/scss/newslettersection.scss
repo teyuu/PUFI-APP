@@ -1,0 +1,49 @@
+@import './abstracts/mixins.scss';
+
+.newsLetterContainer{
+    width: 100%;
+    height: auto;
+    padding: 5rem;
+}
+
+.newsLetterText{
+    @include flex-row-center;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+    p{
+        font-weight: lighter;
+        color: #989797;
+    }
+
+    h4{
+        font-size: 3rem;
+        font-weight: 400;
+    }
+    h6{
+        font-weight: lighter;
+    }
+}
+
+.formNLS{
+    width: 100%;
+    height: auto;
+    @include flex-row-center;
+    padding: 3rem 0;
+
+    .inputForm{
+        width: 500px;
+        height: 3rem;
+        border: 1px solid black;
+
+        @media screen and (max-width: 900px) {
+            width: 300px;
+          }
+    }
+
+    button{
+        width:2rem;
+    }
+}
